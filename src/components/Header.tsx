@@ -5,7 +5,7 @@ import { MdOutlineShoppingBag } from "react-icons/md";
 import Link from "next/link";
 const Header = () => {
   return (
-    <div className="w-full flex fixed shadow-shadows-small p-4 z-50" >
+    <div className="w-full flex fixed shadow-shadows-small p-4 z-50 bg-white" >
       <div  className="w-full flex justify-between items-center">
         <div className="cursor-pointer" >
           <Link href="/">
