@@ -9,6 +9,7 @@ const SwipperPrevButton = () => {
   return (
 
     <div onClick={()=>swiper.slidePrev()}
+    
      className="rounded-full z-50 absolute top-36 right-0 p-4 cursor-pointer shadow-shadows-medium hover:shadow-shadows-high bg-white">
       <MdArrowBackIos color="#ff00a6" className='rotate-180' />
     </div>  )

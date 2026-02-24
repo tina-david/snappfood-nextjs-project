@@ -19,7 +19,7 @@ const RestaurantCart = ({ restaurant }) => {
             borderRadius: "8px 8px 0 0",
           }}
         />
-        <div className="absolute bg-white top-8 rounded-tl-xl rounded-bl-xl py-1 text-secondary-main text-sm">
+        <div className="absolute bg-white top-8 rounded-tl-xl rounded-bl-xl py-1 p-2 text-secondary-main text-sm">
           {restaurant.pay}
         </div>
       </div>

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Logo from "../../public/images/images-home/logo.svg";
-import { MdOutlineShoppingBag } from "react-icons/md";
+import { MdOutlineShoppingBag, MdOutlineShoppingCart } from "react-icons/md";
 import Link from "next/link";
 const Header = () => {
   return (
@@ -14,7 +14,7 @@ const Header = () => {
         </div>
         <Link href="/orders">
         <div className="flex items-center">
-          <MdOutlineShoppingBag className="text-xl"></MdOutlineShoppingBag>
+          <MdOutlineShoppingCart className="text-xl"></MdOutlineShoppingCart>
         <p className="text-sm">{'سفارشات'}</p>
         </div>
         </Link>
