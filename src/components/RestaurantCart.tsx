@@ -1,11 +1,17 @@
 "use client";
+import { RestaurantsType } from "@/model/types";
 import { convertToPersian } from "@/utils/convertToPersian";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { MdOutlineStar } from "react-icons/md";
-
-const RestaurantCart = ({ restaurant }) => {
+interface Props{
+  restaurant:RestaurantsType
+}
+const RestaurantCart = ({ restaurant }:Props) => {
   return (
+    <Link href={`restuarants/${restaurant.id}`}>
+    
     <div className="flex flex-wrap w-full shadow-shadows-medium hover:shadow-shadows-high">
       <div className="w-full h-36 rounded-t-xl relative">
         <Image
@@ -55,6 +61,7 @@ const RestaurantCart = ({ restaurant }) => {
         </div>
       </div>
     </div>
+    </Link>
   );
 };
 

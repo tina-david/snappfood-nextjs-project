@@ -2,8 +2,10 @@ import Link from "next/link";
 import { title } from "process";
 import React from "react";
 import { MdKeyboardArrowLeft } from "react-icons/md";
-
-const Breadcrumb = ({ title }) => {
+type Props={
+  title:string| undefined
+}
+const Breadcrumb = ({ title }:Props) => {
   return (
     <div className="flex flex-wrap w-full items-center">
         <Link href={"/"}>
