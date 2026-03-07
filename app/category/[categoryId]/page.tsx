@@ -15,7 +15,6 @@ export default async function Page({ params }: Props) {
   const hasEmptyRestaurant = restaurants.length === 0;
   return (
     <div className="flex flex-wrap justify-center p-1 md:p-4">
-      My Post:{categoryId}
       <div className="flex flex-wrap w-full my-16">
         <Breadcrumb title={category}/>
         {hasEmptyRestaurant ? (

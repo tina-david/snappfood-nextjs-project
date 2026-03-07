@@ -10,7 +10,7 @@ interface Props{
 }
 const RestaurantCart = ({ restaurant }:Props) => {
   return (
-    <Link href={`restuarants/${restaurant.id}`}>
+    <Link href={`/restuarants/${restaurant.id}`}>
     
     <div className="flex flex-wrap w-full shadow-shadows-medium hover:shadow-shadows-high">
       <div className="w-full h-36 rounded-t-xl relative">

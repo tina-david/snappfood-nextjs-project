@@ -13,7 +13,7 @@ interface Props {
 }
 const Cart = ({ restaurantData }: Props) => {
   const cart = useSelector(
-    (state): { cart: FoodsType[] } => state.cart,
+    (state):FoodsType[]  => state.cart,
   ) as FoodsType[];
   const totalCount = cart.reduce((total, food) => total + food.count, 0);
   const dispatch = useDispatch();
@@ -27,7 +27,7 @@ const handlePurchase=()=>{
         totalPurchase,
         restaurantData:{
             name:restaurantData.name,
-            image:restaurantData.image,
+            image:restaurantData.logo,
             address:restaurantData.address
 
         }
